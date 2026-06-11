@@ -49,7 +49,7 @@ function Hero() {
         Karim Mostafa
         <span className="cursor" aria-hidden="true" />
       </h1>
-      <p className="hero-role">// backend software engineer</p>
+      <p className="hero-role">Software Engineer</p>
 
       <div className="hero-links">
         <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">
