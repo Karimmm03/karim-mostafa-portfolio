@@ -1,27 +1,27 @@
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
-import { FaXTwitter } from 'react-icons/fa6'
+import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
+import { MdEmail } from 'react-icons/md'
 
 const PROJECTS = [
   {
     year: '2025',
-    name: 'Tactix 3.0',
-    href: 'https://github.com/Karimmm03',
+    name: 'Tactix',
+    href: 'https://github.com/Karimmm03/tactix-graduation-project-Backend',
     desc: 'Production sports analysis platform. Team management, player stats, media uploads, AI insights, and role-based access control.',
     stack: ['Node.js', 'MongoDB', 'Redis', 'OpenAI', 'AWS S3', 'Vercel'],
   },
   {
-    year: '2025',
-    name: 'pray',
+    year: '2026',
+    name: 'pray-cli',
     href: 'https://github.com/Karimmm03/prayer-cli',
     desc: 'Go CLI for Islamic prayer times. Standard library only, file-backed caching, live ANSI countdown, cross-platform notifications.',
     stack: ['Go', 'CLI', 'AlAdhan API'],
   },
   {
-    year: '2024',
+    year: '2026',
     name: 'user-auth-api',
-    href: 'https://github.com/Karimmm03',
+    href: 'https://github.com/Karimmm03/user-auth-api',
     desc: 'Production-grade authentication service. JWT + refresh token rotation, forgot-password flow, PostgreSQL, rate limiting.',
-    stack: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
+    stack: ['Node.js', 'Express', 'MongoDB', 'JWT'],
   },
 ]
 
@@ -37,7 +37,7 @@ function Nav() {
     <nav className="nav">
       <a href="/">home</a>
       <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">github</a>
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+      <a href="https://drive.google.com/file/d/1Z9Qp_jy2Bysaifx_8pFrWLglj0WetiFu/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>
     </nav>
   )
 }
@@ -53,11 +53,11 @@ function Hero() {
 
       <div className="hero-links">
         <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">
-          <FiGithub size={18} />
+          <FaGithub size={18} />
           <span>github</span>
         </a>
         <a href="https://www.linkedin.com/in/karim-mostafa-0804k2003" target="_blank" rel="noopener noreferrer">
-          <FiLinkedin size={18} />
+          <FaLinkedin size={18} />
           <span>linkedin</span>
         </a>
         <a href="https://x.com/KarimMostafa___" target="_blank" rel="noopener noreferrer">
@@ -65,24 +65,29 @@ function Hero() {
           <span>X.com</span>
         </a>
         <a href="mailto:karimmostafa842003@gmail.com" target="_blank" rel="noopener noreferrer">
-          <FiMail size={18} />
+          <MdEmail size={18} />
           <span>email</span>
         </a>
       </div>
 
       <p className="hero-bio">
-        CS student at Shorouk Academy, Cairo. Building production-grade backend
+        CS graduate. Building production-grade backend
         systems with Node.js. Targeting engineering roles at top-tier tech companies.
       </p>
       <p className="hero-bio">
         Currently working on{' '}
-        <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">Tactix</a>
+        <a href="https://github.com/Karimmm03/tactix-graduation-project-Backend" target="_blank" rel="noopener noreferrer">Tactix</a>
         {' '}— a sports analysis platform — and exploring system design, DSA, and Go.
       </p>
 
-      <a href="/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
-        ↗ resume.pdf
-      </a>
+      <div className="hero-actions">
+        <a href="https://drive.google.com/file/d/1Z9Qp_jy2Bysaifx_8pFrWLglj0WetiFu/view?usp=drive_link" className="action-link" target="_blank" rel="noopener noreferrer">
+          ↗ resume.pdf
+        </a>
+        <a href="https://drive.google.com/file/d/1p9JPMT_V4Wjs5en9KQnZHe5VY3jbt3VM/view?usp=drive_link" className="action-link" target="_blank" rel="noopener noreferrer">
+          ▶ intro video
+        </a>
+      </div>
     </div>
   )
 }
@@ -137,9 +142,9 @@ function Footer() {
       <span>
         <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">github</a>
         {' · '}
-        <a href="https://linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="https://www.linkedin.com/in/karim-mostafa-0804k2003" target="_blank" rel="noopener noreferrer">linkedin</a>
         {' · '}
-        <a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer">x</a>
+        <a href="https://x.com/KarimMostafa___" target="_blank" rel="noopener noreferrer">x</a>
       </span>
     </footer>
   )
