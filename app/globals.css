@@ -157,6 +157,10 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
 .project {
   display: flex;
   align-items: flex-start;
