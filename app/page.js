@@ -32,6 +32,23 @@ const TOOLKIT = [
   'Git', 'REST APIs', 'Linux / WSL2',
 ]
 
+const BOOKS = [
+  {
+    title: 'Data Structures and Algorithm Analysis in C++',
+    author: 'Mark Allen Weiss',
+    edition: '3rd Edition',
+    href: 'https://www.amazon.com/Data-Structures-Algorithm-Analysis-3rd/dp/0321375319',
+    color: '#1a3a2a',
+  },
+  {
+    title: 'System Design Interview',
+    author: 'Alex Xu',
+    edition: 'Volume 1',
+    href: 'https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF',
+    color: '#1a2a3a',
+  },
+]
+
 function Nav() {
   return (
     <nav className="nav">
@@ -135,6 +152,33 @@ function Toolkit() {
   )
 }
 
+function Books() {
+  return (
+    <section>
+      <p className="section-title">Currently Reading</p>
+      <div className="books">
+        {BOOKS.map((book) => (
+          <a
+            key={book.title}
+            href={book.href}
+            className="book"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ backgroundColor: book.color }}
+          >
+            <div className="book-spine" />
+            <div className="book-content">
+              <p className="book-title">{book.title}</p>
+              <p className="book-author">{book.author}</p>
+              <p className="book-edition">{book.edition}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 function Footer() {
   return (
     <footer className="footer">
@@ -157,6 +201,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Toolkit />
+      <Books />
       <Footer />
     </main>
   )

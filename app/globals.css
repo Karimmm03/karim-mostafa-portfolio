@@ -265,6 +265,68 @@ section {
   padding: 8px 16px;
 }
 
+.books {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.book {
+  display: flex;
+  gap: 0;
+  width: 140px;
+  height: 200px;
+  border-radius: 3px 6px 6px 3px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-6px) rotate(1deg);
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.book-spine {
+  width: 12px;
+  min-width: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.book-content {
+  flex: 1;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+}
+
+.book-title {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.book-author {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: auto;
+}
+
+.book-edition {
+  font-family: var(--font-mono), monospace;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer {
   margin-top: 5rem;
   border-top: 1px solid var(--border);
