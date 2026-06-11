@@ -1,3 +1,27 @@
+const PROJECTS = [
+  {
+    year: '2025',
+    name: 'Tactix 3.0',
+    href: 'https://github.com/Karimmm03',
+    desc: 'Production sports analysis platform. Team management, player stats, media uploads, AI insights, and role-based access control.',
+    stack: ['Node.js', 'MongoDB', 'Redis', 'OpenAI', 'AWS S3', 'Vercel'],
+  },
+  {
+    year: '2025',
+    name: 'pray',
+    href: 'https://github.com/Karimmm03/prayer-cli',
+    desc: 'Go CLI for Islamic prayer times. Standard library only, file-backed caching, live ANSI countdown, cross-platform notifications.',
+    stack: ['Go', 'CLI', 'AlAdhan API'],
+  },
+  {
+    year: '2024',
+    name: 'user-auth-api',
+    href: 'https://github.com/Karimmm03',
+    desc: 'Production-grade authentication service. JWT + refresh token rotation, forgot-password flow, PostgreSQL, rate limiting.',
+    stack: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
+  },
+]
+
 function Nav() {
   return (
     <nav className="nav">
@@ -40,11 +64,42 @@ function Hero() {
   )
 }
 
+function Project({ year, name, href, desc, stack }) {
+  return (
+    <a href={href} className="project" target="_blank" rel="noopener noreferrer">
+      <span className="project-year">{year}</span>
+      <div className="project-body">
+        <div className="project-name">{name}</div>
+        <div className="project-desc">{desc}</div>
+        <div className="project-stack">
+          {stack.map((tech) => (
+            <span className="badge" key={tech}>{tech}</span>
+          ))}
+        </div>
+      </div>
+    </a>
+  )
+}
+
+function Projects() {
+  return (
+    <section>
+      <p className="section-title">Projects</p>
+      <div className="projects">
+        {PROJECTS.map((project) => (
+          <Project key={project.name} {...project} />
+        ))}
+      </div>
+    </section>
+  )
+}
+
 export default function Home() {
   return (
     <main>
       <Nav />
       <Hero />
+      <Projects />
     </main>
   )
 }
