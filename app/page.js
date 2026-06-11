@@ -1,3 +1,6 @@
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
+import { FaXTwitter } from 'react-icons/fa6'
+
 const PROJECTS = [
   {
     year: '2025',
@@ -49,9 +52,22 @@ function Hero() {
       <p className="hero-role">// backend software engineer</p>
 
       <div className="hero-links">
-        <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">↗ github</a>
-        <a href="https://linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noopener noreferrer">↗ linkedin</a>
-        <a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer">↗ x.com</a>
+        <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">
+          <FiGithub size={18} />
+          <span>github</span>
+        </a>
+        <a href="https://www.linkedin.com/in/karim-mostafa-0804k2003" target="_blank" rel="noopener noreferrer">
+          <FiLinkedin size={18} />
+          <span>linkedin</span>
+        </a>
+        <a href="https://x.com/KarimMostafa___" target="_blank" rel="noopener noreferrer">
+          <FaXTwitter size={18} />
+          <span>X.com</span>
+        </a>
+        <a href="mailto:karimmostafa842003@gmail.com" target="_blank" rel="noopener noreferrer">
+          <FiMail size={18} />
+          <span>email</span>
+        </a>
       </div>
 
       <p className="hero-bio">

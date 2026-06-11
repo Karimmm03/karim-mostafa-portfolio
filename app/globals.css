@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  max-width: 680px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 1.5rem 6rem;
 }
@@ -96,14 +96,21 @@ a {
 }
 
 .hero-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-mono), monospace;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
-  transition: color 0.15s;
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: color 0.15s, border-color 0.15s;
 }
 
 .hero-links a:hover {
-  color: var(--text);
+  color: var(--amber);
+  border-color: var(--amber-dim);
 }
 
 .hero-bio {
