@@ -22,6 +22,13 @@ const PROJECTS = [
   },
 ]
 
+const TOOLKIT = [
+  'Node.js', 'Express', 'JavaScript', 'Go', 'C++',
+  'PostgreSQL', 'MongoDB', 'Redis', 'JWT',
+  'AWS S3', 'Cloudinary', 'Vercel',
+  'Git', 'REST APIs', 'Linux / WSL2',
+]
+
 function Nav() {
   return (
     <nav className="nav">
@@ -94,12 +101,26 @@ function Projects() {
   )
 }
 
+function Toolkit() {
+  return (
+    <section>
+      <p className="section-title">Toolkit</p>
+      <div className="toolkit">
+        {TOOLKIT.map((tool) => (
+          <span className="tool" key={tool}>{tool}</span>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 export default function Home() {
   return (
     <main>
       <Nav />
       <Hero />
       <Projects />
+      <Toolkit />
     </main>
   )
 }
