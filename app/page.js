@@ -114,6 +114,21 @@ function Toolkit() {
   )
 }
 
+function Footer() {
+  return (
+    <footer className="footer">
+      <span>Karim Mostafa — Giza, Egypt</span>
+      <span>
+        <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">github</a>
+        {' · '}
+        <a href="https://linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noopener noreferrer">linkedin</a>
+        {' · '}
+        <a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer">x</a>
+      </span>
+    </footer>
+  )
+}
+
 export default function Home() {
   return (
     <main>
@@ -121,6 +136,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Toolkit />
+      <Footer />
     </main>
   )
 }
