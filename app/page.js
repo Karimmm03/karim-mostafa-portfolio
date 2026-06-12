@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
+import { FaWhatsapp } from 'react-icons/fa6'
 
 const PROJECTS = [
   {
@@ -103,6 +104,10 @@ function Hero() {
         </a>
         <a href="https://drive.google.com/file/d/1p9JPMT_V4Wjs5en9KQnZHe5VY3jbt3VM/view?usp=drive_link" className="action-link" target="_blank" rel="noopener noreferrer">
           ▶ intro video
+        </a>
+        <a href="https://wa.me/201115082237" className="action-link" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp size={16} />
+          <span>Contact via WhatsApp</span>
         </a>
       </div>
     </div>
