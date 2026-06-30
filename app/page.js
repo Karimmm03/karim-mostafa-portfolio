@@ -55,7 +55,7 @@ function Nav() {
     <nav className="nav">
       <a href="/">home</a>
       <a href="https://github.com/Karimmm03" target="_blank" rel="noopener noreferrer">github</a>
-      <a href="https://drive.google.com/file/d/1Z9Qp_jy2Bysaifx_8pFrWLglj0WetiFu/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>
+      <a href="https://drive.google.com/file/d/13Ewb8H4nicKUwPBRORSySlAjz5sFB2vw/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>
     </nav>
   )
 }
@@ -99,7 +99,7 @@ function Hero() {
       </p>
 
       <div className="hero-actions">
-        <a href="https://drive.google.com/file/d/1Z9Qp_jy2Bysaifx_8pFrWLglj0WetiFu/view?usp=drive_link" className="action-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/13Ewb8H4nicKUwPBRORSySlAjz5sFB2vw/view?usp=drive_link" className="action-link" target="_blank" rel="noopener noreferrer">
           ↗ resume.pdf
         </a>
         <a href="https://drive.google.com/file/d/1p9JPMT_V4Wjs5en9KQnZHe5VY3jbt3VM/view?usp=drive_link" className="action-link" target="_blank" rel="noopener noreferrer">
